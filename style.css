@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy'; /* Make sure to include the quotes around the font name */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    height: 100vh; /* Use vh (viewport height) for full height */
+}
+
+#left, #right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#left {
+    background-image: url('https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#right {
+    background-image: url('https://images.unsplash.com/3/doctype-hi-res.jpg?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#overlay1, #overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay1 {
+    background-color: rgba(0, 0, 0, 0.644); /* Use rgba for transparency */
+}
+
+#overlay2 {
+    background-color: rgba(238, 228, 228, 0.863); /* Use rgba for transparency */
+}
+
+#center1, #center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#center1 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(253, 252, 250);
+}
+
+#center1 p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+ #center1 button {
+    background: transparent;
+    margin: 8px;
+    width: 160px;
+    height: 45px;
+    color: rgb(231, 227, 227);
+    border: 1px solid rgb(245, 239, 239);
+}
+
+ #center1 button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+#center2 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#center2 p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+ #center2 button {
+    background: transparent;
+    margin: 8px;
+    width: 160px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+ #center2 button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
